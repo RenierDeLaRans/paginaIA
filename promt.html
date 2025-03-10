@@ -1,0 +1,164 @@
+Para crear una página web de tipo landing semántica utilizando Bootstrap 5, aquí tienes un ejemplo de código HTML y CSS que puedes utilizar como base para tu página. Recuerda que este es un ejemplo básico y puedes personalizarlo según tus necesidades y estilo propio:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Servicios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+        }
+        section {
+            padding: 50px 0; 
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center py-4">
+        <img src="tu-logo.png" alt="Logo" class="float-start">
+        <nav class="float-end">
+            <a href="#sobre-mi" class="mx-2 text-white">Sobre mí</a>
+            <a href="#tecnologias" class="mx-2 text-white">Tecnologías que domino</a>
+            <a href="#portafolio" class="mx-2 text-white">Mi portafolio de productos</a>
+            <a href="#testimonios" class="mx-2 text-white">Testimonios de mis clientes</a>
+            <a href="#contacto" class="mx-2 text-white">Contacto</a>
+        </nav>
+    </header>
+    
+    <section id="sobre-mi" class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                    <div class="col-12 text-center">
+                    <h2>SOBRE MI</h2>
+                    <img src="anonimous.jpg" alt="Sobre mí">
+                    <p>Ser un desarrollador junior es el inicio de una emocionante carrera en el campo de la tecnología y el desarrollo de software. .</p>
+                    <p>Es un período de aprendizaje, crecimiento y descubrimiento de nuevas habilidades y conocimientos en un ambiente profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Tecnologías que domino</h2>
+                </div>
+                <div class="col-2">
+                    <img src="html.png" alt="HTML">
+                </div>
+                <div class="col-2">
+                    <img src="css.png" alt="CSS">
+                </div>
+                <div class="col-2">
+                    <img src="JS.jpg" alt="JavaScript">
+                </div>
+                <div class="col-2">
+                    <img src="React.png" alt="React">
+                </div>
+                <div class="col-2">
+                    <img src="mysql.jpg" alt="MySQL">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Agregar sección para testimonios con carrusel -->
+
+    <section id="portafolio" class="bg-dark text-black">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="asesoria.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Asesorias contables y tributarias</h5>
+                            <p class="card-text">Ofrecemos asesoramiento contable personalizado para empresas y personas, garantizando un correcto manejo de sus finanzas y cumplimiento de obligaciones fiscales.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-4">
+                    <div class="card">
+                        <img src="desarrollo.jpeg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Developer</h5>
+                            <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-4">
+                    <div class="card">
+                        <img src="producto3.jpg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto 3</h5>
+                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite este bloque para cada tarjeta de producto que desees mostrar -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Agregar sección para ingreso de datos-->
+
+    <section id="contacto">
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Número Celular</label>
+                    <input type="tel" class="form-control" id="telefono" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+  
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Renier De La Rans ©</p>
+                    <!-- Agregar enlaces a redes sociales -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
+
+En este código se utilizan las clases y componentes de Bootstrap 5 para asegurarse de que la página web sea responsiva y tenga un diseño profesional. Puedes personalizar los estilos y contenidos según tus necesidades y preferencias. También se recomienda reemplazar las imágenes y textos de prueba con tus propios elementos gráficos y de texto. ¡Buena suerte en tu desarrollo web!
